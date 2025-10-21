@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>慈雨 | Artist</title>
+    <meta name="description" content="慈雨 — 夜桜のように静かで幻想的な世界。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Local/system fonts only to avoid network dependency -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="bg-gradient"></div>
+    <canvas id="water-canvas" aria-hidden="true"></canvas>
+    <div class="menu-bar" aria-label="Menu">
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-panel">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M4 7 H20 M4 12 H20 M4 17 H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div id="menu-panel" class="menu-panel" role="menu">
+        <ul class="menu-list">
+          <li><a href="#live" role="menuitem">Live</a></li>
+          <li><a href="#music" role="menuitem">Music</a></li>
+          <li><a href="#dialog" role="menuitem">Dialog</a></li>
+          <li><a href="#gallery" role="menuitem">Gallery</a></li>
+          <li><a href="#contact" role="menuitem">SNS</a></li>
+          <li><a href="#contact-info" role="menuitem">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="site-mark" aria-label="Artist name">慈雨</div>
+      </section>
+
+      
+
+      
+
+      
+
+      
+
+      <section id="live" class="section live">
+        <div class="container">
+          <h2>Live</h2>
+          <div class="live-grid">
+            <article class="live-card">
+              <button class="live-image" data-large="assets/gFnzTVqV.jpg" aria-label="画像を拡大">
+                <img src="assets/gFnzTVqV.jpg" alt="慈雨 ライブ写真 1" loading="lazy" />
+              </button>
+              <div class="live-actions">
+                <a class="btn outline" href="https://tiget.net/events/434852" target="_blank" rel="noopener">チケットはこちら</a>
+                <button class="btn primary js-detail" data-large="assets/gFnzTVqV.jpg">詳細</button>
+              </div>
+            </article>
+            <article class="live-card">
+              <button class="live-image" data-large="assets/live2.jpeg" aria-label="画像を拡大">
+                <img src="assets/live2.jpeg" alt="慈雨 ライブ写真 2" loading="lazy" />
+              </button>
+              <div class="live-actions">
+                <a class="btn outline" href="https://www.instagram.com/jiu_music/" target="_blank" rel="noopener">チケットはDMまで</a>
+                <button class="btn primary js-detail" data-large="assets/live2.jpeg">詳細</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="music" class="section music">
+        <div class="container">
+          <h2>Music</h2>
+          <div class="music-grid">
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/BpPRMPMswaE"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/LIvWF2Y6gxY"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/Qpr1boX7hZg"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/-m0dcr2rDQk"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dialog" class="section dialog">
+        <div class="container">
+          <h2>Dialog</h2>
+          <div class="dialog-grid">
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/gmH9BWPZK8I"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/HjG6xwZ42mU"
+                title="YouTube video player"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery" aria-label="Gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="gallery-strip" role="list">
+            <button class="gallery-image" role="listitem" data-large="assets/FfIRhRqK.jpg" aria-label="画像を拡大">
+              <img src="assets/FfIRhRqK.jpg" alt="慈雨 ギャラリー画像 1" loading="lazy" />
+            </button>
+            <button class="gallery-image" role="listitem" data-large="assets/6tYQfpkc.jpg" aria-label="画像を拡大">
+              <img src="assets/6tYQfpkc.jpg" alt="慈雨 ギャラリー画像 2" loading="lazy" />
+            </button>
+            <button class="gallery-image" role="listitem" data-large="assets/c6HT28tr.jpg" aria-label="画像を拡大">
+              <img src="assets/c6HT28tr.jpg" alt="慈雨 ギャラリー画像 3" loading="lazy" />
+            </button>
+            <button class="gallery-image" role="listitem" data-large="assets/hero.jpeg" aria-label="画像を拡大">
+              <img src="assets/hero.jpeg" alt="慈雨 ギャラリー画像 4" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>SNS</h2>
+          <div class="contact-row" role="list">
+            <a class="btn icon outline x" href="https://x.com/jiu0719" target="_blank" rel="noopener" aria-label="X (Twitter)" role="listitem">
+              <svg class="icon icon-x" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path d="M3.2 3h5.1l4 5.5L16.7 3H21l-6.6 8.8L21 21h-5.2l-4.3-5.9L7.4 21H3l6.7-9L3.2 3z" fill="#ffffff"/>
+              </svg>
+              <span class="label">X</span>
+            </a>
+            <a class="btn icon outline youtube" href="https://www.youtube.com/@jiu0719" target="_blank" rel="noopener" aria-label="YouTube" role="listitem">
+              <svg class="icon icon-youtube" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <rect x="2" y="6" width="20" height="12" rx="3" ry="3" fill="#ff0000"/>
+                <polygon points="10,9 16,12 10,15" fill="#ffffff"/>
+              </svg>
+              <span class="label">YouTube</span>
+            </a>
+            <a class="btn icon outline tiktok" href="https://www.tiktok.com/@jiu.music?_t=ZS-8zkToBMPLpY&_r=1" target="_blank" rel="noopener" aria-label="TikTok" role="listitem">
+              <svg class="icon icon-tiktok" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path d="M14 4c1.2 1.7 3 2.7 5 2.8v3.1c-1.9-.1-3.5-.7-5-1.8v6.3a5 5 0 1 1-5-5c.3 0 .7 0 1 .1v3.1c-.3-.1-.6-.2-1-.2a2 2 0 1 0 2 2V4h3z" fill="#ffffff"/>
+              </svg>
+              <span class="label">TikTok</span>
+            </a>
+            <a class="btn icon outline instagram" href="https://www.instagram.com/jiu_music/" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">
+              <svg class="icon icon-instagram" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4" ry="4" fill="none" stroke="#E4405F" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4.2" fill="none" stroke="#E4405F" stroke-width="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="#E4405F"/>
+              </svg>
+              <span class="label">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-info" class="section contact-info">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="contact-text">お問い合わせはDMまで</p>
+          <p class="contact-handle">
+            <a href="https://www.instagram.com/jiu_music/" target="_blank" rel="noopener">@jiu_music</a>
+          </p>
+          <div class="contact-actions">
+            <a class="btn outline" href="https://www.instagram.com/jiu_music/" target="_blank" rel="noopener">InstagramでDM</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Always-visible SNS bar -->
+      <nav class="sns-fab" aria-label="SNS links">
+        <a class="fab-btn x" href="https://x.com/jiu0719" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M3.2 3h5.1l4 5.5L16.7 3H21l-6.6 8.8L21 21h-5.2l-4.3-5.9L7.4 21H3l6.7-9L3.2 3z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="fab-btn youtube" href="https://www.youtube.com/@jiu0719" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <polygon points="10,8.5 16,12 10,15.5" fill="currentColor"/>
+            <rect x="3" y="6.5" width="18" height="11" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </a>
+        <a class="fab-btn tiktok" href="https://www.tiktok.com/@jiu.music?_t=ZS-8zkToBMPLpY&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M14 4c1.2 1.7 3 2.7 5 2.8v3.1c-1.9-.1-3.5-.7-5-1.8v6.3a5 5 0 1 1-5-5c.3 0 .7 0 1 .1v3.1c-.3-.1-.6-.2-1-.2a2 2 0 1 0 2 2V4h3z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="fab-btn instagram" href="https://www.instagram.com/jiu_music/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Lightbox for enlarged images -->
+      <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="画像の拡大表示">
+        <button class="lightbox-close" aria-label="閉じる">×</button>
+        <img class="lightbox-image" src="" alt="拡大画像" />
+      </div>
+
+      
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 慈雨</small>
+      </div>
+    </footer>
+  </body>
+  </html>
